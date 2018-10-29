@@ -1,0 +1,192 @@
+body {
+    font: 12px/1.5em Tahoma, Helvetica, Arial, \5B8B\4F53, sans-serif;
+    color: #333;
+}
+.Cwrap {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Ctop .logo {
+    width: 220px;
+    height: 100px;
+}
+.Ldb {
+    display: block;
+}
+.Ctop .logo a, .LI_top .logo a {
+    display: block;
+    height: 100px;
+    background: url(../images/logo.jpg) no-repeat;
+    text-indent: -1000px;
+}
+/*========注册=====================*/
+.Cwrap {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Lovh {
+    overflow: hidden;
+}
+.RG_type {
+    border-bottom: 2px solid #6E6E6E;
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.RG_type a.cstyle {
+    height: 26px;
+    margin-top: 0;
+    font-weight: bold;
+    line-height: 26px;
+    background: url(../images/buttonSkin.png) 0 -450px no-repeat;
+
+    background-position: 0 -450px;
+}
+.RG_type a {
+    color: #FFF;
+    float: left;
+    width: 160px;
+    height: 22px;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-right: 3px;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    background-position: 0 -500px;
+}
+.RG_mbox {
+    border: 1px solid #CCC;
+}
+.Lmt10 {
+    margin-top: 10px;
+}
+.Lpt20 {
+    padding-top: 20px;
+}
+.Lfll {
+    float: left;
+}
+.RG_sbox1 {
+    width: 743px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    background: url(../images/banggo/repeatYSkin.png) right 0 repeat-y;
+}
+.RG_title {
+    width: 700px;
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    border-bottom: 1px dotted #E6E6E6;
+}
+.RG_mbox .item {
+    width: 700px;
+    padding-top: 10px;
+}
+.Lmt15 {
+    margin-top: 15px;
+}
+.RG_mbox .ltext {
+    width: 120px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+}
+.RG_mbox .inputlbd {
+    width: 5px;
+    height: 30px;
+    overflow: hidden;
+    background-position: 0 -650px;
+}
+.RG_mbox .input1 {
+    border: 1px solid #ABABAB;
+    width: 240px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px 0 0;
+    margin: 0 10px 0 0;
+    background-position: 0 -700px;
+    background: url(../images/iconSkin.png) 0 -700px repeat-x;
+    background-repeat: repeat-x;
+}
+.RG_mbox .tips {
+    width: 305px;
+    margin-top: -2px;
+    display: inline-block;
+    color: #999;
+}
+.RG_mbox .errorinfo {
+    height: 20px;
+    color: #F60;
+    display: block;
+    line-height: 20px;
+}
+.Lcfl {
+    clear: left;
+}
+.RG_mbox .input2 {
+    border: 1px solid #ABABAB;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px 0 0;
+    margin: 0 10px 0 0;
+    background: url(../images/iconSkin.png) 0 -700px repeat-x;
+
+    background-position: 0 -700px;
+    background-repeat: repeat-x;
+}
+.btn_sendmessage {
+    background-position: -226px -168px;
+    display: inline-block;
+    width: 152px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.btn, .btn span {
+    background-image: url(../images/buttons.png);
+    background-repeat: no-repeat;
+}
+.btn_sendmessage span {
+    display: inline-block;
+    text-indent: -9999px;
+}
+.RG_mbox .rarea {
+    width: 219px;
+}
+.RG_rightinfo {
+    text-indent: -9999px;
+
+    width: 219px;
+    height: 320px;
+    background: url(../images/bgowelcometext.png) 0 0 no-repeat;
+}
+.LI_bottom {
+    width: 980px;
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.LI_bottom a {
+    color: #333;
+    text-decoration: none;
+}
+.btn_acceptAndRegister {
+    background-position: 0 -84px;
+    display: inline-block;
+    width: 215px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.btn_acceptAndRegister span {
+    display: inline-block;
+    text-indent: -9999px;
+}

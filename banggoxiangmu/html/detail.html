@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../css/detail.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery-zadzoom/jquery.zadzoom.css" />
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript"src="../lib/jquery-zadzoom/jquery.zadzoom.js"></script>
+    <script type="text/javascript"src="../js/detail2.js"></script>
+
+    <script type="text/javascript" src="../js/detail.js"></script>
+    <script type="text/javascript"src="../js/common.js"></script>
+</head>
+<body>
+    
+    <div id="bg_wrap">
+        <div class="bg_wrap_headtopline">
+            <p class="bg_wrap_left">
+                欢迎来到邦购网，全场实付满99元包邮
+            </p>
+            
+
+            <div class="bg_wrap_right">
+                <ul>
+                    <li id="Login">
+                        <a href="#" >登录</a>
+                        <div class="bg_new_headtop_box">
+                            <a href="http://bgact.banggo.com/Unionlogin/Authorize?from=qq">QQ账户登录</a>
+                            
+                            <a href="http://bgact.banggo.com/Unionlogin/Authorize?from=alipay">支付宝登录</a>
+                            <a href="http://m.banggo.com/Api/wxLogin">微信账户登录</a>
+                        </div>
+
+                    </li>
+                    <li><a href="html/zhuce.html">注册</a></li>
+                    <li id="mybt">
+                        <a href="#">我的邦淘</a>
+                        <div class="bg_new_headtop_box ">
+                            <a href="#">我的订单</a>
+                            <a href="http://user.banggo.com/member/Point">我的积分</a>
+                            <a href="http://user.banggo.com/member/Collect">我的点赞</a>
+                            <a href="http://user.banggo.com/member/Address">收货地址</a>
+                    </div>
+                    </li>
+                    <li><a href="#">会员中心</a></li>
+                    <li id="xiazai">
+                        <a href="#">下载app</a>
+                        <div class="bg_new_headtop_box bt_phone">
+                            <img alt="扫描邦购手机二维码" src="../images/xiazai.png" width="140" height="140" >
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">微博</a>
+                        <a href="#" class="whact">微信
+                        </a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+    <div id="bg_headtop">
+        <div class="bg_new_headtop">
+        <!-- logo -->
+            <div class="logo fl">
+                <a href="../index.html" class="logo_a"><img src="../images/logo.png" height="55" width="266" alt="" /></a>
+            </div>
+        <!-- search -->
+           <div class="search fl">
+               <div class="search_top fl">
+                   <form target="_self" action="" method="get" name="quicksearch" >
+                        <div class="bg_searchContent">
+                            <div class="bg_searchLeft">
+                                <input name="word" type="text" value="断码零利48H，10000+秋冬臻品 大聚惠 直降9.9元起" class="bg_inputText" id="input_textbox" autocomplete="off" maxlength="70">
+                                <div class="bg_iconSearch fr" ><i class="iconfont icon-sousuo"></i>&nbsp;搜索</div>
+                            </div>
+                        </div>
+                    </form>
+               </div>
+               <ul class="bg_search_c fl">
+                    <li><a href="list1.html">衬衫</a></li>
+                    <li><a href="list1.html" class="bg_search_cr">夹克</a></li>
+                    <li><a href="list1.html">休闲裤</a></li>
+                    <li><a href="list1.html">休闲鞋</a></li>
+                    <li><a href="list1.html" class="bg_search_cr">羽绒服</a></li>
+                </ul>
+
+           </div>
+           <div class="car fl"> 
+                <!-- cartBag -->
+                <div class="CartBag">
+                    <a href="#">购物袋 <b name="redbag_num">0</b> 件</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div id="bg_nav">
+        <div class="nav">
+            <ul class="nav_list fl">
+                <li>
+                    <a href="list1.html"  class="nav_list_a">首页</a>
+                </li>
+                <li class="rexiao">
+                    <a href="list1.html" class="nav_list_a">热销分类</a>
+                    <div class="category_hover_wrap" >
+                            <div style="min-height:300px;overflow:hidden">
+                                <div class="category_column">
+                                <dt>
+                                    <a href="list1.html">男生热门</a>
+                                </dt>
+                                    <a href="#">短袖T恤</a>
+                                    <a href="#">短袖衬衫</a>
+                                    <a href="#">POLO</a>
+                                    <a href="#">长袖衬衫</a>
+                                    <a href="#">休闲中短裤</a>
+                                    <a href="#">休闲长裤</a>
+                                    <a href="#">牛仔裤</a>
+                                    <a href="#">针织裤</a>
+                                    <a href="#">内衣</a>
+                                    <a href="#">箱包</a>
+                                    <a href="#">鞋履</a>
+                                    <a href="#">配饰</a>
+                            </div>
+                            <div class="category_column">
+                                <dt>
+                                    <a href="list1.html">女生热门</a>
+                                </dt>
+                                    <a href="#">短袖T恤</a>
+                                    <a href="#">连衣裙</a>
+                                    <a href="#">半身裙</a>
+                                    <a href="#">休闲中短裤</a>
+                                    <a href="#">牛仔中短裤</a>
+                                    <a href="#">内衣</a>
+                                    <a href="#">箱包</a>
+                                    <a href="#">鞋履</a>
+                                    <a href="#">配饰</a>
+                            </div>
+                            <div class="category_column">
+                                <dt>
+                                    <a href="list1.html">儿童热门</a>
+                                </dt>
+                                    <a href="#">短袖T恤</a>
+                                    <a href="#">套装</a>
+                                    <a href="#">裙装</a>
+                                    <a href="#">衬衫</a>
+                                    <a href="#">中短裤</a>
+                                    <a href="#">长裤</a>
+                                    <a href="#">鞋包配</a>
+                                    <a href="#">婴幼童</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nanzhuang">
+                    <a href="list1.html" class="nav_list_a">男装</a>
+                    <div class="category_hover_wrap" >
+                            <div style="min-height:300px;overflow:hidden">
+                                <div class="category_column">
+                                    <dt>
+                                        <a href="#">上装</a>
+                                    </dt>
+                                        <a href="#">短袖T恤</a>
+                                        <a href="#">POLO</a>
+                                        <a href="#">长袖T恤</a>
+                                        <a href="#">夹克</a>
+                                        <a href="#">毛衣</a>
+                                        <a href="#">衬衫</a>
+                                        <a href="#">卫衣</a>
+                                        <a href="#">外套</a>
+                                        <a href="#">西装</a>
+                                </div>
+                                <div class="category_column">
+                                        <dt>
+                                            <a href="#">下装</a>
+                                        </dt>
+                                        <a href="#">牛仔长裤</a>
+                                        <a href="#">休闲长裤</a>
+                                        <a href="#">西裤</a>
+                                        <a href="#">休闲中短裤</a>
+                                        <a href="#">针织长裤</a>
+                                        <a href="#">牛仔中短裤</a>
+                                </div>
+                                <div class="category_column">
+                                        <dt>
+                                            <a href="#">内衣</a>
+                                        </dt>
+                                        <a href="#">内衣下装</a>
+                                        <a href="#">内衣上装</a>
+                                        <a href="#">内衣套装</a>
+                                        <a href="#">袜子</a>
+                                        <a href="#">家居服</a>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a href="list1.html" class="nav_list_a">女装</a>
+
+                </li>
+                <li>
+                    <a href="#" class="nav_list_a">童装</a>
+
+                </li>
+                <li>
+                    <a href="#" class="nav_list_a">箱包</a>
+
+                </li>
+                <li>
+                    <a href="#" class="nav_list_a">配饰</a>
+
+                </li>
+                <li>
+                    <a href="#" class="nav_list_a">鞋履</a>
+
+                </li>
+            </ul>
+            <ul class="themeNavigate">
+                <li class="themeName" id="themeName1">
+                    <a class="textAdvert" id="siteA20160828"href="#" >  
+                        <img class="zhandianpic" src="../images/lqzx-pc.png" height="43" width="75"  alt="" ></a>
+                    </li>
+                <li class="themeName" id="themeName2">
+                    <a class="textAdvert" id="sitexkzx"href="#" >  
+                        <img class="zhandianpic" src="../images/80403xrzx.jpg" height="43" width="75" alt=""></a>
+                    </li>
+                 <li class="themeName" id="themeName3">
+                    <a class="textAdvert" id="sitesgd"href="#">  
+                        <img class="zhandianpic" src="../images/zhongxin.png" height="40" width="134" alt=""></a>
+                    </li>
+            </ul>
+            <a href="#"class="nav_gif fr">
+                <img src="../images/mobilegai.gif" height="40" width="134" alt="" />
+            </a>
+        </div>
+    </div>
+
+    <div id="main">
+        
+        <div class="mbshop_breadNav">
+            <div class="mbshop_breadNavLink">
+                <a href=" http://search.banggo.com/search/a_a.shtml">所有商品</a>&gt;
+                    <a href="http://search.banggo.com/search/a_3.shtml">男装</a> &gt; <a href="http://search.banggo.com/search/a_15.shtml">T恤</a> &gt; <a href="http://search.banggo.com/search/a_112.shtml">长袖T恤</a>         </div>
+        </div>
+        <div class="mbshop_container">
+            <div class="mbshop_detail_frame_lt">
+            <div class="mbshop_detail_smallPicThumb">
+                <!-- 大图 -->
+                <div class="mbshop_detail_bigPicArea">
+                    <div class="mbshop_detail_bigPicZoom" style="position:relative;">
+                        <span class="mbshop_bigPicMark" style="left: 0px; top: 248px; display: none; width: 230.4px; height: 230.4px;"></span>
+                        
+                    </div>
+                    
+                    </div>
+                    <div class="mbshop_detail_smallPicList">
+                        
+                    </div>
+                    </div>
+                <div class="mbshop_detail_favAndShare">
+                    <div class="mbshop_detail_pdid"></div>
+                    <div class="mbshop_detail_favAndShare_to">
+                        <div class="mbshop_detail_share_txt">分享</div>
+                        <div class="mbshop_detail_sharePlugin">
+                            <div class="bdsharebuttonbox bdshare-button-style0-32" data-bd-bind="1539239235060">
+                                <p>分享到</p>
+                                <div class="bdsharebuttonboxli">
+                                    <a href="#" class="bds_qzone" data-cmd="qzone"></a>
+                                    <i>QQ空间</i>
+                                </div>
+                                <div class="bdsharebuttonboxli">
+                                    <a href="#" class="bds_tsina" data-cmd="tsina"></a>
+                                    <i>新浪微博</i>
+                                </div>
+                                <div class="bdsharebuttonboxli">
+                                    <a href="#" class="bds_tqq" data-cmd="tqq"></a>
+                                    <i>腾讯微博</i>
+                                </div>
+                                <div class="bdsharebuttonboxli">
+                                    <a href="#" class="bds_renren" data-cmd="renren"></a>
+                                    <i>人人网</i>
+                                </div>
+                                <div class="bdsharebuttonboxli">
+                                    <a href="#" class="bds_weixin" data-cmd="weixin"></a>
+                                    <i>微信</i>
+                                </div>
+                                <div class="bdsharebuttonboxli">
+                                    <a href="#" class="bds_more" data-cmd="more"></a>
+                                    <i>更多</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 收藏商品 -->
+                        <a id="collector_button" href="javascript:;" class="mbshop_detail_btn_wish" title="收藏商品" onclick="goods_attr.operateProductCollection(this, '661532')">
+                                            点赞
+                        </a>
+                </div>
+            </div>
+            <!-- 右上信息 -->
+            <div class="mbshop_detail_frame_rt">
+                <!-- 这个数字就是商品销量 1 -->
+                <h5 class="mbshop_detail_goods_title">Metersbonwe 【秋季新品】男胸前字母迷彩印花潮流长袖T恤</h5>
+                <!-- 商品基础信息 -->
+                <div id="goods_base_info_panel"> 
+                <div class="mbshop_detail_pdbrand mbshop_detail_pdname">                    
+                </div>  
+                <div class="mbshop_detail_baseinfo">     
+                <ul>         
+                <!--闪购 -->                             
+                <!-- 价格 -->         
+                <li class="mbshop_detail_price">                              
+                                          
+                </li>                              
+                <li class="mbshop_detail_rebate">                              
+                <div> 本品不参加vip，svip折扣 </div>                           
+                <div class="mbshop_detail_rebateRule">                 会员规则                 
+                <div class="mbshop_detail_rebateRule_open">                     在有效期1年内：<br>                     累计购物满1000元则升级为VIP；未满1000元则降为普通会员。<br>                     在有效期1年内：<br>                     累计购物满2000元则升级为SVIP；如累计购物1000~1999元，则降为VIP；如累计购物未满1000元则降为普通会员。<br>                 </div>             
+                </div>         
+                </li>                               <!-- 促销链接 -->                              
+                <li class="mbshop_detail_promotion">                     
+                <dl>                        
+                 <dt>促销</dt>                         
+                 <dd style="position:relative;">                             
+                 <li>                                 
+                 <a href="http://search.banggo.com/search/a_a_a_a_a_a_4530_a_a_a_a_a.shtml">· 1件7折</a>                             
+                 </li>                                                      
+                 </dd>                     
+                 </dl>                     
+                 </li>                           
+                 </ul> 
+                 </div>  
+                 <div class="mbshop_detail_saleinfo">     
+                 <div class="clipbox">         
+                 <div class="first">销量<span>1</span></div>         
+                 <div><i>&nbsp;</i>累计评价<span id="saleInfoCommentCount">--</span></div>         
+                 <div><i>&nbsp;</i>送邦购积分<span id="salePoint">69</span></div>     </div> </div>  
+
+                 <div id="cartPanelBuffs" style="display:none">     
+                 <div id="cartPanelBuff661532">     
+                 <!--color&size-->         
+                 <div class="mbshop_detail_colorSizeList">             
+                             
+                    
+                </div>         
+                <!-- num -->         
+                <div class="mbshop_detail_num">
+                 
+
+                 <div class="mbshop_detail_alertclass" style="display:none"></div>         </div>  </div></div>     
+                 <div id="color_size_panel"> 
+
+
+
+                       
+                </dl>  
+                <dl class="mbshop_detail_color_list">                 <dt>颜 色：<b id="colorSelected">请选择颜色</b></dt>                 <dd class="color">                                      </dd>             </dl>           
+                <!-- size -->             
+                <dl class="mbshop_detail_size_list">                                        
+                <a href="javascript:void(0)" class="sizeSelecteHelper">尺码选择助手</a>                     <div class="sizeSelecteHelperBox">尺码信息维护中</div>                                     <dt>尺 码：<b id="sizeSelected">请选择尺码</b></dt>                 <dd class="size">                                                               <a id="size_571" type="size" attr_value="M:170/92A" goods_attr_sn="661532" code="571" a_type="0" stock_num="1183">                         M:170/92A                         </a>                                                                                    <a id="size_572" type="size" attr_value="L:175/96A" goods_attr_sn="661532" code="572" a_type="0" stock_num="1568">                         L:175/96A                         </a>                                                                                    <a id="size_573" type="size" attr_value="XL:180/100A" goods_attr_sn="661532" code="573" a_type="0" stock_num="1238">                         XL:180/100A                         </a>                                                                                    <a id="size_574" type="size" attr_value="S:165/88A" goods_attr_sn="661532" code="574" a_type="0" stock_num="1401">                         S:165/88A                         </a>                                                                                    <a id="size_575" type="size" attr_value="XXL:185/104B" goods_attr_sn="661532" code="575" a_type="0" stock_num="195">                         XXL:185/104B                         </a>                                                       </dd>             </dl>         </div>         
+                <!-- num -->         
+                <div class="mbshop_detail_num">             
+                <dl>                 
+                <dt>购买数量：</dt>                 
+                <dd>                     
+                <a class="mbshop_detail_buyNum_less" title="减少">-</a>                     
+                <input class="mbshop_detail_buyNum" type="text" value="1">                     
+                <a class="mbshop_detail_buyNum_add" title="增加">+</a>                       <!--                      <strong id="availableNum">（库存剩余 <span id="stockNum">5585</span>件）</strong>                                            <b id="availableMessage"></b>                                            -->                 </dd>             </dl>             
+                <div class="mbshop_detail_alertclass" style="display:none"></div>         </div>  </div>   
+
+
+
+
+                <div class="mbshop_detail_btn_bag">     <!-- 上架商品 -->              <!-- 售罄商品 -->                      <a href="javascript:;" class="mbshop_detail_btn_addcart"  title="加入购物袋">加入购物袋</a>              <!-- 待售商品 -->                     </div>  </div>
+
+                    <div class="mbshop_detail_keywords">
+                    <li>浏览更多:</li>
+                    <!-- 循环开始 -->
+                        <li><a href="http://search.banggo.com/search/a_112.shtml" target="_blank">长袖T恤</a></li>
+                </div>
+                    <div class="mbshop_detail_packageUseAlert">
+                        <span>温馨提示：</span>
+                        <ul>
+                            <li><em></em>此商品不可使用积分</li>
+                            <li><em></em>14天退换</li>
+                        </ul>
+                    </div>
+            </div>
+            <!-- 历史浏览 -->
+            <div class="mbshop_detail_des">
+            <!-- 无推荐引擎或浏览历史时，样式为mbshop_detail_des_right_none -->
+            <div class="mbshop_detail_des_right">
+                <div class="mbshop_detail_tabNavWrap">
+                    <!-- detail tabNav -->
+                    <ul class="mbshop_detail_tabNav">
+                        <div class="detailFloopyfixed_goods">
+                            
+                        </div>
+                        <li class="mbshop_detail_tabNav_hover gitPage">商品详情</li>
+                        <li class="goods_comments_nav gitPage">商品评价(<span>0</span>)</li>
+                        <li class="gitPage">购买须知</li>
+                        <span class="mbshop_detail_tabNav_addToCart">选择商品信息</span>
+                    </ul>
+                </div>
+
+
+
+            <div class="mbshop_openpop mbshop_addCartSuccess" >
+                <!-- title -->
+                <div class="mbshop_openpop_title">
+                    <span>提示</span>
+                    <a class="mbshop_openpop_close" href="javascript:;" title="关闭"></a>
+                </div>
+                <!-- addSuccessFrame -->
+                <div class="mbshop_openpop_con">
+                    <!-- buy -->
+                    <div class="mbshop_openpop_buyArea">
+                        <span class="mbshop_openpop_addSuccess">加入购物袋成功！</span>
+                        <span class="mbshop_openpop_btnArea">
+                            <a class="mbshop_openpop_btnGoPay" target="_blank" href="bycar.html">去结算</a>
+                            <a class="mbshop_openpop_btnGoShop" href="javascript:;">继续购物</a>
+
+                        </span>
+
+                    </div>
+                    <div class="mbshop_openpop_productRecommend">
+                       
+                    </div>
+                </div>
+            </div>
+
+
+
+                <div class="mbshop_detail_boxCon">
+                    <!-- 商品评价/晒单 -->
+                    <span style="display: none;" class="comments_product_code">661532</span>
+                    <!-- 视频 -->
+                    <div id="ad_video_show_goods" style="float:none"></div>
+                    
+                    <!-- 商品详情 -->
+                    <a name="goods-Info" id="goods-Info">&nbsp;</a>
+                    <div class="mbshop_detail_con" id="prodcut_description">         
+                    <div id="goods_model">     
+                    <div>         
+                    <img width="740" src="../images/spxx.png" height="35" alt="商品信息">      </div>     
+                    <ul class="info_list mt5 mb10">     
+                    <li>         <strong>品牌：</strong>Metersbonwe</li>
+                    <li><strong>款名：</strong>男胸前字母迷彩印花潮流长袖T恤</li>         
+                    <li><strong>款号：</strong>661532</li>
+                    <li><strong>分类：</strong>         Metersbonwe&nbsp;&gt;&nbsp;<c href="http://search.banggo.com/Search/a_.shtml" title="套头卫衣" target="_blank">长袖T恤</c></li>         
+                    <li><strong>吊牌价：</strong>119.00</li>                      
+                    <li><strong>季节：</strong>秋</li>                      
+                    <li><strong>系列：</strong>休闲</li>                      
+                    <li><strong>性别：</strong>男款</li>              
+                    </ul>     
+                    <div>         <img width="740" src="../images/ppjs.png" height="35" alt="品牌介绍">     </div>     
+                    <div class="mt5 mb10">         美特斯邦威，不走寻常路！旨在为18-25岁的年轻消费者打造个性、流行的服饰产品，立志成为中国休闲服市场的领导品牌！     </div>                   
+                    <div>             
+                    <img width="740" src="../images/mtzs.png" height="35" alt="模特展示">         </div>         
+                    <div class="mt5 mb10">                              
+                    <img src="../images/661532_30 (1).jpg"alt="" />
+                    <img src="../images/661532_31 (1).jpg"  alt="" />
+                    <img src="../images/661532_32 (1).jpg"  alt="" />
+                    <img src="../images/661532_33 (1).jpg"  alt="" />
+                    <img src="../images/661532_34.jpg"  alt="" />
+                    <img src="../images/661532_35.jpg"  alt="" />
+                    <img src="../images/661532_36.jpg"  alt="" />
+                    <img src="../images/661532_37.jpg"  alt="" />
+                    <img src="../images/661532_38.jpg"  alt="" />
+                    <img src="../images/661532_39.jpg"  alt="" />
+                    <img src="../images/661532_40.jpg"  alt="" />
+                    <img src="../images/661532_41.jpg"  alt="" />
+                    <img src="../images/661532_42.jpg"  alt="" />
+                    <img src="../images/661532_43.jpg"  alt="" />
+                    <img src="../images/661532_44.jpg"  alt="" />
+                    <img src="../images/661532_45.jpg"  alt="" />
+
+
+                                      
+                    </div>                    
+                    <div>             
+                    <img width="740" src="../images/xjzs.png" height="35" alt="细节展示">     </div>         
+                    <div class="mt5 mb10 little_show">                                                   
+                    <img src="../images/661532_01.jpg" height="730" width="730" alt="" />
+                    <img src="../images/661532_02.jpg" height="730" width="730" alt="" />                                                                    
+                    <dl class="dl_padding">                         
+                    <dt>                             
+                    <img src="../images/661532_03.jpg" height="350" width="350" alt="" />                         
+                    </dt>                         
+                    <dd></dd>                     
+                    </dl>                                                                    <dl class="dl_padding">                         
+                    <dt>                             
+                    <img src="../images/661532_04.jpg" height="350" width="350" alt="" />  
+                    </dt>                         
+                    <dd>
+                        
+                    </dd>                    
+                     </dl>                                                                    <dl class="dl_padding">                         <dt>                             
+                     <img src="../images/661532_05.jpg" height="350" width="350" alt="" />                         </dt>                         <dd></dd>                     </dl>                                                                    <dl class="dl_padding">                         <dt>  
+                     <img src="../images/666666.jpg" height="350" width="350" alt="" />                        </dt>                         <dd></dd>                     </dl>                                                                    <dl class="dl_padding">                         <dt>                                                      </dt>                         <dd></dd>                     </dl>                                                                                                           </div>                    
+                    <div>             <img width="740" src="../images/ysxz.png" height="35" alt="颜色选择">         </div>         <div class="color_show">             <ul>                                      <li> 
+                    <img src="../images/661532_color1.jpg" height="90" width="90" alt="" />                       <h5>中花灰</h5>                     </li>                                      <li>                         
+                    <img src="../images/661532_color2.jpg" height="90" width="90" alt="" /><h5>亮白</h5>                     </li>                                      <li>                         
+                    <img src="../images/661532_color3.jpg" height="90" width="90" alt="" /><h5>影黑</h5>                     </li>                              </ul>         </div>               </div>         <div style="width:790px;margin:0 auto;float:none;margin-top:10px;clear:both;">
+    <img src="../images/0306sct.jpg" border="0" width="790" height="1241" class="bottomLazy"> <img src="../images/WSWSEwRE.jpg" height="139" width="790"> 
+</div></div>
+
+                    <a name="comments" id="comments">&nbsp;</a>
+                    <div class="mbshop_detail_con goods_comment_lists_detail">
+<!-- 顾客评论 -->
+<div class="mbshop_detail_commentsFrame">
+        <span class="mbshop_detail_commentsTitle">顾客评论</span>
+    <div class="mbshop_detail_commentsCon">
+        <div class="mbshop_detail_commentsConBox1">
+            <ul>
+                <li class="mbshop_detail_commentsStyle1">商品满意度 <b>0</b> 分 共 <i>0</i> 人评分</li>
+                <li>
+                    <dl>
+                        <dt>商品满意度</dt>
+                        <dd>
+                            <p style="height: 15px;" class="mbshop_commentStar0"></p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <strong>该宝贝怎么样？</strong>
+                    <span>发表评价最高可获得 <em>15</em> 积分</span><!--，优秀晒单最高可获得 <em>300</em> 积分！-->
+                   <!--  <a href="javascript:;" class="mbshop_detail_btnComment" title="我要评价/晒单">我要评价/晒单</a> -->
+                </li>
+            </ul>
+        </div>
+        <div class="mbshop_detail_commentsConBox2">
+            <ul>
+                <li>0.00% 的用户认为实际尺码[偏小]</li>
+                <li>100% 的用户认为实际尺码[合适]</li>
+                <li>0.00% 的用户认为实际尺码[偏大]</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 评论列表开始 -->
+    <div class="mbshop_detail_commentsList">
+        <input type="hidden" id="commentsCount" value="0">
+        <span>全部评论（0）条</span>
+        <div class="mbshop_detail_commentsListBox">
+                    暂无数据
+                </div>
+        <!-- 分页 -->
+                    </div>
+    <!-- 评论列表结束 -->
+</div>
+</div>
+                    <!-- 购买须知 -->
+                    <a name="buy" id="buy">&nbsp;</a>
+                    <div class="mbshop_detail_con">
+                        <div class="info_body">
+                        <h5>尺码误差</h5>
+                        <p>由于尺寸是我们手工测量，可能存在1-2厘米的误差，如果不能接受误差的朋友请勿拍。</p>
+                        <h5>色差问题</h5>
+                        <p>网络购物色差难以避免，我们尽量做到最小色差，完全不能接受色差的朋友请谨慎购买，以免收到货后发生纠纷。</p>
+                        <h5>运货方式</h5>
+                        <p>江浙沪快递方式费用6元，并支持货到付款，费用10元，除江浙沪外全国其他地区普通快递10元，EMS15元起，港澳台及海外地区35元起，系统将根据邮编自动匹配快递。</p>
+                        <h5>收货提醒</h5>
+                        <p>请务必在签收快递的时候确认商品完好无损后在签收，如发现缺货、少货可拒绝签单并联系邦购客服。</p>
+                        <h5>发货方式</h5>
+                        <p>全年无休，假日能发货，晚间会根据订单及快递规律做相应机动延迟。</p>
+                        <h5>发票问题</h5>
+                        <p>如需开具发票，请提交订单时选择需要发票，否则视为不需要。</p>
+                        <h5>付款减库存</h5>
+                        <p>邦购网库存机制为付款后减库存，购买成功以买家付款到邦购网时间为准，拍下不付款的商品无法保留其购买权利。</p>
+                        <h5>退换货问题</h5>
+                        <p>如果您的订单需要办理退换货，请您务必先通过电话或在线客服的方式与邦购客服中心联系。客服人员会帮您登记退换货单。<br>内衣、内裤以及袜子此类贴身产品一经购买如无质量问题不予以退换。</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 推荐引擎 -->
+            <div class="mbshop_detail_des_left">
+
+<!-- 看了又看 -->
+<div id="showGsn"></div>  
+
+
+     
+                
+
+        
+                <div id="showHistory">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="getActId" id="ad_comom_share">
+        <div data-bgtj="ads|comom_share|4466" style="width: 100%;">
+            <div class="zyShare_wrap">
+            <!-- 分享下载左边分区start-->
+            <ul class="zyShare_Left">
+                <li>
+                    <a href="/Index/app" target="_blank"><img alt="" src="../images/zyshare01.png" height="238" width="278"  ></a> 
+                </li>
+                <li>
+                    <a href="http://weibo.com/gobanggo" target="_blank"><img alt="" src="../images/zyshare02.png" height="238" width="279" ></a> 
+                </li>
+                <li>
+                    <a href="javascript:;"><img alt="" src="../images/zyshare03.png" height="238" width="279"  ></a> 
+                </li>
+            </ul>
+            <!-- 分享下载右边分区start-->
+            <div class="zyShare_Right">
+                <div class="Contact_Top">
+                    <a href="mailto:liyang12@metersbonwe.com"><img src="../images/hezuo.jpg" height="149" width="359"></a> 
+                </div>
+                <div class="Contact_Bottom">
+                    <ul>
+                        <li onclick="clickysf()" target="imLogin">
+                            <img alt="" src="../images/indexonline.png" height="40" width="40" > 
+                            <p>
+                                在线客服
+                            </p>
+                        </li>
+                        <li class="indexopinionpopbox" style="cursor:pointer;">
+                            <img alt="" src="../images/indexopinion.png" height="40" width="40"> 
+                            <p>
+                                意见反馈
+                            </p>
+                        </li>
+                        <li class="nobg">
+                            <a href="https://www.wenjuan.com/s/3URry2/" target="_blank"><img alt="" src="../images/indexsurvey.png" height="40" width="40"></a> 
+                            <p>
+                                问卷调查
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="mbshop_bottomAllWidth">
+    <div class="mbshop_container">
+        <!-- guide -->
+        <div class="mbshop_bottom_guide">
+        
+                    <dl>
+                <dt>新手指南</dt>
+                                <dd><a target="_blank" href="/article.shtml?art=57">
+                    注册新用户</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=58">
+                    用户协议</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=59">
+                    找回密码</a></dd>
+                                </dl>
+                    <dl>
+                <dt>购物指南</dt>
+                                <dd><a target="_blank" href="/article.shtml?art=60">
+                    红包使用说明</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=61">
+                    购物流程</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=62">
+                    订单状态</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=63">
+                    邦购币绑定与使用</a></dd>
+                                </dl>
+                    <dl>
+                <dt>配送方式</dt>
+                                <dd><a target="_blank" href="/article.shtml?art=64">
+                    配送范围</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=65">
+                    订单拆分</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=66">
+                    商品验货与签收</a></dd>
+                                </dl>
+                    <dl>
+                <dt>支付方式</dt>
+                                <dd><a target="_blank" href="/article.shtml?art=68">
+                    发票制度</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=67">
+                    支付方式</a></dd>
+                                </dl>
+                    <dl>
+                <dt>售后服务</dt>
+                                <dd><a target="_blank" href="/article.shtml?art=70">
+                    退换货政策</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=69">
+                    退换办理流程</a></dd>
+                                    <dd><a target="_blank" href="/article.shtml?art=71">
+                    退款说明</a></dd>
+                                </dl>
+                    <dl>
+                <dt>联系方式</dt>
+                <dd><a onclick="clickysf()" target="_blank">在线客服</a></dd>
+                <dd>咨询电话：4008219988</dd>
+            </dl>
+        </div>
+        <div class="mbshop_bottomCopyright">
+            <p>CopyRight © 2000-2018, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司 banggo.com <a target="_blank" href="http://www.miitbeian.gov.cn" style="color:#787878">沪ICP备05033127号</a>|沪ICP证B2-20150114 021-38119999</p>
+            <span>
+                <a href="http://www.miibeian.gov.cn/" target="_blank"><img src="../images/lz_beian_h40.png" height="40" width="136" alt="网站备案信息" ></a>
+                <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov71zgzilhvn4inh27pfqd6h0hvwad254" target="_blank"><img src="../images/lz_shgs_h40.png"  width="118" height="40" alt="上海工商"></a>
+            </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
